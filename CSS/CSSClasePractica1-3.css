@@ -1,0 +1,12 @@
+.izquierda{
+    float: left;
+    width: 25%;
+    text-align: center;
+    background-color: lightcoral;
+}
+
+.derecha{
+    text-align: center;
+    background-color: lightblue;
+    margin-left: 25% ;   
+}
