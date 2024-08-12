@@ -1,0 +1,72 @@
+/* 1. Todos los elementos deben tener fuente de familia sans-serif */
+/*12. Aplicar fondo a todo el documento html, usando color expresado en RGB con valores
+245 en todos sus parámetros */
+:root{
+    font-family: sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+
+/* 2. Titulo h1 con tamaño 24px, color #242424 y grosor 900 */
+h1{
+    font-size: 24px;
+    color: #242424;
+    font-weight: 900;
+}
+
+/* 3. Titulo h2 con tamaño 20px, color #606060 y grosor 800 */
+h2{
+    font-size: 20px;
+    color: #606060;
+    font-weight: 800;
+}
+
+/* 4. Los párrafos tamaño 14px */
+/* 8. Los párrafos deben tener un margen superior e inferior de 30px */
+p{
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* 5. Los elementos de la lista deben tener fuente de familia monospace y tamaño 18px */
+/* 13. Eliminar las viñetas de la lista */
+/* 9. La lista entera debe tener un margen a la izquierda de 100px y un padding de 20px.
+Además, agregarle un borde sólido de 2 pixeles, color azul */
+ul{
+    font-family: monospace;
+    font-size: 18px;
+    width: 40%;
+    list-style-type: none;
+    margin-left: 100px;
+    padding: 20px;
+    border: solid 2px blue;
+}
+
+/* 6. Todos los links deben estar en negrita */
+a{
+    font-weight: bold;
+}
+
+/* 7. Los links dentro de la lista deben ser color naranja y estar subrayados */
+li a{
+    color: orange;
+    text-decoration: underline;
+}
+
+/* 10. Todos elementos dentro del elemento de lista de las provincias de Nequen y Rio
+Negro deben tener color verde (texto y link) */
+.punto10{
+    color: green;
+}
+
+/* 14. Agregar 10 pixeles de espaciado interno a cada ítem de la lista */
+ul li{
+    padding: 10px;
+}
+
+/* 15. Agregar un fondo a cada ítem de la lista cuando se le pasa el cursor de mouse por
+encima. El color del fondo debe ser en RGBA, aplicando valor 0 a los parámetros de
+color y 0.1 al parámetro de opacidad */
+ul li:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
