@@ -1,0 +1,71 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(250, 250, 250);
+}
+
+.facebook{
+    float: left;
+    margin-top: 10%;
+    margin-left: 25%;
+    width: 500px;
+    font-size: 20px;
+}
+
+.facebook h1{
+    color: #1877f2;
+    font-size: 54px;
+}
+
+.formularios{
+    float: right;
+    margin-top: 7%;
+    margin-right: 25%;
+    width: 400px;
+    height: 300px;
+    border-radius: 3px;
+}
+
+form{
+    background-color: #ffffff;
+    border: solid 2px black;
+    padding: 8%;
+    text-align: center;
+}
+
+.formularios p{
+    font-size: 14px;
+}
+
+input{
+    border: solid 1px;
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+}
+
+.boton_inicio{
+    background-color: #1877f2;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.boton_inicio:hover{
+    background-color: #0b5ac3;
+}
+
+.boton_crear{
+    background-color: rgb(93, 191, 76);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.boton_crear:hover{
+    background-color: rgb(45, 165, 24);
+}
+
+.link{
+    color: black;
+    font-weight: bold;
+}
