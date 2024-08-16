@@ -34,6 +34,16 @@ form{
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.05), 5px 5px 10px rgba(0, 0, 0, 0.05); /* Sobra de el form */
 }
 
+form a{
+    color: #1877f2;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+form a:hover{
+    text-decoration: underline;
+}
+
 .formularios p{
     font-size: 14px;
 }
@@ -54,6 +64,7 @@ input{
 
 .boton_inicio:hover{
     background-color: #0b5ac3;
+    cursor: pointer;
 }
 
 .boton_crear{
@@ -66,9 +77,15 @@ input{
 
 .boton_crear:hover{
     background-color: rgb(45, 165, 24);
+    cursor: pointer;
 }
 
 .link{
+    text-decoration: none;
     color: black;
     font-weight: bold;
+}
+
+.link:hover{
+    text-decoration: underline;
 }
