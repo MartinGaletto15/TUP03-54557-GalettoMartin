@@ -13,7 +13,7 @@
     border-radius: 10px;
 }
 .tarjeta p {
-    margin: 10px 0;
+    margin: 10px;
 }
 fieldset{
     width: 50%;
@@ -24,6 +24,6 @@ fieldset{
     border: solid 2px;
     text-align: center;
 }
-.tarjeta .atributos {
+.atributos {
     padding: 10px;
 }
