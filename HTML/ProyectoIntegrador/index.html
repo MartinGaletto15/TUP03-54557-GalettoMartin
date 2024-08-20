@@ -1,0 +1,81 @@
+<!-- Tiene un minimo de css para poner la imagen a la derecha, ajustar el tamaño de un parrafo y para hacer mas estetica la tabla -->
+<!-- Los links a redes sociales no llevan a ningun lado ya que evité insertar los links a mis redes sociales (unicamente GitHub funciona)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            display: inline-flex;
+        }
+        img{
+            float: right;
+            margin: 0px;
+            width: 150px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        .infopersonal{
+            width: 75%;
+        }
+    </style>
+</head>
+<body>
+    <head>
+        <h1>Galetto Martín Alejandro</h1>
+    </head>
+    <body>
+        <img src="https://frro.cvg.utn.edu.ar/pluginfile.php/115815/user/icon/snap/f1?rev=1665268" alt="FotoMartinGaletto">
+        <div class="infopersonal">
+            <h2>Informacion personal</h2>
+            <p>Soy un apasionado del desarrollo web. Me encanta explorar y aprender sobre diseño, incluyendo códigos de colores, fuentes y elementos de estilo en sitios web. Disfruto resolviendo problemas específicos en mis proyectos de programación y mejorando continuamente mis habilidades.</p>
+        </div>
+        <div>
+            <h2>Lista de intereses</h2>
+            <ul>
+                <li>Futbol</li>
+                <li>Videojuegos</li>
+                <li>Programación</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Tabla de informacion de contacto</h2>
+            <table border="1">
+                <tr>
+                    <th>Correo electronico</th>
+                    <th>Telefono</th>
+                </tr>
+                <tr>
+                    <td>martingaletto2003@gmail.com</td>
+                    <td>3462564393</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h2>Enlaces a redes sociales</h2>
+            <a href="">Instagram</a>
+            <br>
+            <a href="">Facebook</a>
+            <br>
+            <a href="https://github.com/MartinGaletto15" target="_blank">GitHub</a>
+        </div>
+        <div>
+            <h2>Formulario de contacto</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+            <br><br>
+            <label for="correo">Email:</label>
+            <input type="text" id="correo" placeholder="Ingrese su Email">
+            <br><br>
+            <label for="texto">Texto:</label>
+            <textarea name="texto" id="texto"></textarea>
+            <br><br>
+            <input type="submit">
+        </div>
+    </body>
+</body>
+</html>
