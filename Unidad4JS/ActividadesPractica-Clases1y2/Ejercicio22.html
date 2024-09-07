@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio22</title>
+    <script>
+        let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'];
+
+        while (true) {
+            let dni = prompt("Ingrese su DNI (0 - 99999999) o pulsa 'cancelar' para salir:");
+            if (dni === null) {
+                break; // El usuario pulsó cancelar
+            }
+            dni = parseInt(dni);
+            if (isNaN(dni)) {
+                alert("¡El DNI ingresado no es un número!");
+            } else if (dni < 0 || dni > 99999999) {
+                alert("Número no válido (0 - 99999999)");
+            } else {
+                let resto = dni % 23;
+                let letra = letras[resto];
+                alert(`El DNI completo es: ${dni}${letra}`);
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

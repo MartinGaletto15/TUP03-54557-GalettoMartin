@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio17</title>
+    <script>
+        let nro1 = parseInt(prompt("Ingrese el nro que desea saber si es primo"));
+        let cont = 0;
+        for(let i=1; i<=nro1; i++){
+            if(nro1%i == 0){
+                cont++;
+            }
+        }
+        if(cont > 2){
+            document.write("El nro " + nro1 + " NO es primo<br/>");
+        }else{
+            document.write("El nro " + nro1 + " es primo<br/>");
+        }   
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

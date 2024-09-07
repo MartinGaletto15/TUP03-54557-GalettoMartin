@@ -1,0 +1,27 @@
+<!-- Repasar el uso de null y cadenas.push -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio20</title>
+    <script>
+        let cadenas = [];
+        let input;
+
+        while (true) {
+            input = prompt("Ingrese una cadena de texto (pulse 'cancelar' para terminar):");
+            if (input === null) {
+                break; // Salir del bucle si se pulsa "cancelar"
+            }
+            cadenas.push(input);
+        }
+        let resultado = cadenas.join("-");
+        document.write("Las cadenas concatenadas son: " + resultado);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio10</title>
+    <script>
+        let frase = prompt("Ingres la frase deseada");
+        let cont = 0;
+        for(let i=0; i<= frase.length; i++){
+            switch (frase[i]){
+                case "a":
+                    cont++;
+                    break;
+                case "e":
+                    cont++;
+                    break;
+                case "i":
+                    cont++;
+                    break;
+                case "o":
+                    cont++;
+                    break;
+                case "u":
+                    cont++;
+                    break;
+            }
+        }
+        document.write("La cantidad de vocales en la frase son: " + cont);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
