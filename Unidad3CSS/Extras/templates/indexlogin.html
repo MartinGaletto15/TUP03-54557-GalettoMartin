@@ -1,0 +1,36 @@
+<!-- El objetivo de este ejercicio era practicar el diseño adaptativo de una pagina web -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/stylelogin.css">
+</head>
+<body>
+    <div class="login">
+        <h1>Crea tu cuenta</h1>
+        <form action="Registro">
+            <div class="campos">
+                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="text" name="lastname" placeholder="Apellido" required>
+                <input type="text" name="email" placeholder="Correo electronico" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <input type="password" name="confirmarpassword" placeholder="Repita su contraseña" required>
+            </div>
+            <div class="terminos">
+                <input type="checkbox" name="terminosycondiciones" id="terminos" required>
+                <label for="terminos">Acepto los <a href="">terminos y condiciones</a></label>
+            </div>
+            <div class="botones">
+                <input type="submit" class="botonenviar" value="Registrarse">
+                <button class="botongoogle">
+                    <img src="../images/googleLogo.png" alt="Logo Google">
+                    <p class="textobotongoogle">Registrarme con Google</p>
+                </button>
+            </div>
+        </form>
+    </div> 
+</body>
+</html>
