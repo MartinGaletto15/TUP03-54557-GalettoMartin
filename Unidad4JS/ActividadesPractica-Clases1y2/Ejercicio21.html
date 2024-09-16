@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio21</title>
+    <script>
+        let nro;
+        let suma = 0;
+        while (true) {
+            let input = prompt("Ingrese un número (o pulse 'Cancelar' para terminar):");
+            if (input === null) {
+                break; // Salir del bucle si se pulsa "Cancelar"
+            }
+            nro = parseFloat(input);
+            if(isNaN(nro)){
+                alert("No es un número válido");
+                nro = parseFloat(prompt("Número no válido, ingrese otro"));
+            }else{
+                suma = nro + suma;
+            }
+        }
+        document.write("La suma de los numeros ingresados es: " + suma);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
