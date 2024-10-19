@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cantDias(dia, mes, año){
+            if (mes == 4 || mes == 6 || mes == 9 || mes == 11){
+                return 30;
+            }
+            else if(mes == 2){
+                if(año % 4 == 0){
+                    if (año % 100 != 0){
+                        return 29;
+                    }
+                    else if(año % 400 == 0){
+                        return 29;
+                    }
+                    else{
+                        return 28;
+                    }
+                }
+                else{
+                    return 28;
+                }
+            }
+            else{
+                return 31;
+            }
+        }
+        let dia, mes, año;
+        dia = parseInt(prompt("Dia: "));
+        mes = parseInt(prompt("Mes: "));
+        año = parseInt(prompt("Año: "));
+        let resultado = cantDias(dia, mes, año);
+        document.write("El año " + mes + " tiene " + resultado + " dias");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

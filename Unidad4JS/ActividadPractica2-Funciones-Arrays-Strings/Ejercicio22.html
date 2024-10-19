@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function valorMayor(arr){
+            let maximo = 0;
+            for(let i=0; i<arr.length; i++){
+                for (let j=0; j<arr[0].length; j++){
+                    if(arr[i][j] > maximo){
+                        maximo = arr[i][j];
+                    }
+                }
+            }
+            document.write("El valor maximo es: " + maximo);
+        }
+        let numeros = [
+            [10, 20, 30],
+            [40, 90, 60],
+            [70, 80, 50]
+        ]
+        valorMayor(numeros);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

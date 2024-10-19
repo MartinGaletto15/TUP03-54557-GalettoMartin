@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function esBiciesto(año){
+            if(año % 4 == 0){
+                if (año % 100 != 0){
+                    año = "es biciesto"
+                }
+                else if(año % 400 == 0){
+                    año = "es biciesto"
+                }
+                else{
+                    año = "no es biciesto"
+                }
+            }
+            else{
+                año = "no es biciesto"
+            }
+            return año;
+        }
+        let año = parseInt(prompt("Ingrese el año que desea saber: "));
+        let resultado = esBiciesto(año);
+        document.write("El año " + resultado);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

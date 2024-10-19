@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function seRepite(arr) {
+            let visto = [];
+            let repetido = [];
+            for (let i = 0; i < arr.length; i++) {
+                if (visto.includes(arr[i]) && !repetido.includes(arr[i])) {
+                    repetido.push(arr[i]);
+                } else {
+                    visto.push(arr[i]);
+                }
+            }
+            document.write("Los valores repetidos son: " + repetido.join(", "));
+        }
+        
+        let numeros = [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100];
+        seRepite(numeros);
+    </script>
+</head>
+<body>
+</body>
+</html>
